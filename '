@@ -149,21 +149,17 @@ h4 {
 						height: 1px;
 						border: 2px solid black;
 						margin-inline: auto;
-
-						transition: 0.3s;
 					}
 
 					&::after {
 						top: 65%;
 					}
 
-					&.on::before {
-						top: 50%;
+					&.on {
 						transform: translate(-50%, -50%) rotate(-45deg);
 					}
 
-					&.on::after {
-						top: 50%;
+					&.on {
 						transform: translate(-50%, -50%) rotate(45deg);
 					}
 				}
@@ -200,7 +196,7 @@ h4 {
 							top: var(--small-size);
 							right: var(--small-size);
 
-							width: 95vw;
+							width: 80vw;
 							height: 95vh;
 							background-color: whitesmoke;
 							border-radius: 5px;
@@ -212,7 +208,7 @@ h4 {
 							position: fixed;
 							top: calc(var(--small-size) * 2);
 							right: calc(var(--small-size) * 2);
-							width: calc(95vw - calc(var(--small-size) * 2 + 1px));
+							width: calc(80vw - calc(var(--small-size) * 2 + 1px));
 							height: calc(95vh - calc(var(--small-size) * 2 + 1px));
 							border: 1px solid black;
 							border-radius: 5px;

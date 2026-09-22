@@ -28,6 +28,7 @@ body {
       height: 70vh;
       padding: calc(var(--xx-large-size) * 1);
       background-color: #fff;
+      box-shadow: 0 5px #333;
 
       display: flex;
       gap: var(--xx-large-size);
@@ -67,12 +68,11 @@ body {
           justify-self: center;
           font-size: calc(var(--xx-large-size) * 1.3);
           font-style: bold;
-          margin-bottom: calc(var(--medium-size));
         }
 
         .name_yomi__character {
           justify-self: center;
-          font-size: calc(var(--large-size));
+          font-size: calc(var(--medium-size));
           margin-bottom: calc(var(--xx-large-size) * 1.5);
         }
 
@@ -109,7 +109,9 @@ body {
       background-color: #ccc;
       box-shadow: 5px 10px #333;
       overflow: clip;
-      filter: brightness(0.7);
+      filter: brightness(0.6);
+
+      cursor: pointer;
 
       &.on {
         background-color: #fff;
@@ -136,6 +138,11 @@ body {
       &.on::before {
         background-color: #fff;
         transform: translateX(-50%) scale(1.5);
+      }
+
+      &:hover {
+        filter: brightness(0.8);
+        border: 5px solid #555;
       }
 
       .char {
